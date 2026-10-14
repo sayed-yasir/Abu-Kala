@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#6d28d9">
+  <title>آنلاین ابو کالا | خرید هوشمند</title>
+  <meta name="description" content="آنلاین ابو کالا؛ فروشگاه اینترنتی نمونه با محصولات متنوع، جستجو و سبد خرید.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline">🎉 پیشنهادهای ویژه آنلاین ابو کالا · خرید آسان، انتخاب هوشمند</div>
+  <header class="header">
+    <a class="brand" href="#" aria-label="صفحه اصلی آنلاین ابو کالا">
+      <img class="brand-logo" src="logo-abu-kala.png" alt="لوگوی آنلاین ابو کالا">
+      <span class="brand-name">آنلاین <b>ابو کالا</b><small>انتخاب خوب، خرید مطمئن</small></span>
+    </a>
+    <form class="search" id="searchForm">
+      <span>⌕</span><input id="searchInput" type="search" placeholder="جستجوی کالا، برند یا دسته‌بندی..." autocomplete="off">
+      <button type="submit">جستجو</button>
+    </form>
+    <div class="header-actions">
+      <label class="theme-picker" title="انتخاب ظاهر سایت">🎨 <select id="themeSelect" aria-label="انتخاب ظاهر"><option value="violet">بنفش مدرن</option><option value="emerald">سبز فروشگاهی</option><option value="dark">تیره لوکس</option><option value="ocean">آبی اقیانوسی</option><option value="rose">صورتی مدرن</option><option value="amber">کهربایی گرم</option></select></label>
+      <button class="icon-button" id="accountButton">👤 <span id="accountLabel">ورود / حساب</span></button>
+      <button class="icon-button" id="ordersButton">📦 <span>سفارش‌ها</span></button>
+      <button class="icon-button" id="favoritesButton" aria-label="علاقه‌مندی‌ها">♡ <span>علاقه‌مندی</span></button>
+      <button class="cart-button" id="cartButton">سبد خرید <span class="cart-count" id="cartCount">۰</span></button>
+    </div>
+  </header>
+  <nav class="nav">
+    <button class="nav-toggle" id="navToggle">☰ دسته‌بندی کالاها</button>
+    <div class="nav-links" id="navLinks">
+      <button data-category="همه">همه کالاها</button><button data-category="موبایل">موبایل و دیجیتال</button>
+      <button data-category="خانه">خانه و آشپزخانه</button><button data-category="مد">مد و پوشاک</button>
+      <button data-category="زیبایی">زیبایی و سلامت</button><button data-category="ورزش">ورزش و سفر</button>
+    </div>
+    <span class="nav-note">ارسال سریع · پشتیبانی مشتریان</span>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">فروشگاه اینترنتی شما</span>
+        <h1>خریدی که <em>حال خوب</em> می‌سازد.</h1>
+        <p>از فناوری روز تا وسایل خانه؛ انتخاب‌های محبوب را با تجربه‌ای ساده و دل‌نشین پیدا کن.</p>
+        <button class="primary-button" id="shopNow">دیدن محصولات <span>←</span></button>
+        <div class="hero-perks"><span>✓ انتخاب متنوع</span><span>✓ خرید آسان</span><span>✓ پشتیبانی دوستانه</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-badge">پیشنهاد<br><b>ویژه</b></div>
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="کفش ورزشی قرمز" class="hero-product">
+        <div class="hero-caption"><small>انتخاب محبوب هفته</small><b>استایل متفاوت، هر روز</b></div>
+      </div>
+    </section>
+
+    <section class="trust-row">
+      <div><span class="trust-icon">🚚</span><span><b>ارسال قابل پیگیری</b><small>اطلاع از وضعیت سفارش</small></span></div>
+      <div><span class="trust-icon">🛡️</span><span><b>خرید با اطمینان</b><small>اطلاعات شفاف محصول</small></span></div>
+      <div><span class="trust-icon">💬</span><span><b>پشتیبانی پاسخ‌گو</b><small>همراه شما در خرید</small></span></div>
+      <div><span class="trust-icon">✨</span><span><b>پیشنهادهای جذاب</b><small>کالاهای منتخب</small></span></div>
+    </section>
+
+    <section class="section categories-section">
+      <div class="section-heading"><div><span class="eyebrow">یک دنیا انتخاب</span><h2>دسته‌بندی‌های محبوب</h2></div><span class="muted">برای شروع، یک دسته را انتخاب کن</span></div>
+      <div class="category-grid">
+        <button class="category-card cat-purple" data-category="موبایل"><span>📱</span><b>موبایل و دیجیتال</b><small>گجت‌های روز</small></button>
+        <button class="category-card cat-orange" data-category="خانه"><span>☕</span><b>خانه و آشپزخانه</b><small>برای زندگی بهتر</small></button>
+        <button class="category-card cat-pink" data-category="مد"><span>👟</span><b>مد و پوشاک</b><small>استایل خودت</small></button>
+        <button class="category-card cat-green" data-category="زیبایی"><span>🧴</span><b>زیبایی و سلامت</b><small>مراقبت روزانه</small></button>
+        <button class="category-card cat-blue" data-category="ورزش"><span>🎒</span><b>ورزش و سفر</b><small>آماده ماجراجویی</small></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="productsSection">
+      <div class="price-disclaimer">قیمت‌های بازار با منبع و تاریخ بررسی نمایش داده می‌شوند؛ پیش از سفارش، قیمت و موجودی فروشنده را دوباره بررسی کنید.</div>
+      <div class="section-heading">
+        <div><span class="eyebrow">منتخب برای تو</span><h2 id="productsTitle">محصولات پیشنهادی</h2></div>
+        <div class="product-tools"><span class="muted" id="resultCount"></span><select id="sortSelect" aria-label="مرتب‌سازی"><option value="featured">مرتب‌سازی: پیشنهادی</option><option value="low">ارزان‌ترین</option><option value="high">گران‌ترین</option><option value="name">نام کالا</option></select></div>
+      </div>
+      <div class="filter-pills" id="filterPills">
+        <button class="active" data-filter="همه">همه کالاها</button><button data-filter="موبایل">موبایل</button><button data-filter="کامپیوتر">کامپیوتر</button><button data-filter="خانه">خانه و آشپزخانه</button><button data-filter="مد">مد و پوشاک</button><button data-filter="زیبایی">زیبایی</button><button data-filter="ورزش">ورزش و سفر</button><button data-filter="کودک">کودک</button><button data-filter="کتاب">کتاب و تحریر</button><button data-filter="خودرو">لوازم خودرو</button><button data-filter="ابزار">ابزار</button><button data-filter="خوراکی">خوراکی</button><button data-filter="حیوانات">حیوانات خانگی</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>🔎</span><h3>محصولی پیدا نشد</h3><p>عبارت جستجو یا دسته‌بندی را تغییر بده.</p><button class="secondary-button" id="resetSearch">نمایش همه محصولات</button></div>
+    </section>
+
+    <section class="newsletter">
+      <div><span class="eyebrow">همراه آنلاین ابو کالا</span><h2>از پیشنهادهای تازه باخبر شو</h2><p>برای دریافت خبرنامه نمونه، ایمیل خود را وارد کن.</p></div>
+      <form id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="ایمیل شما" required><button type="submit">عضویت در خبرنامه</button></form>
+      <span class="newsletter-spark">✦</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand"><img class="footer-logo" src="logo-abu-kala.png" alt="لوگوی آنلاین ابو کالا"><h3>آنلاین ابو کالا</h3><p>یک تجربه خرید ساده، زیبا و هوشمند.</p></div>
+      <div><b>راهنمای خرید</b><a href="#productsSection">جستجوی محصولات</a><a href="#productsSection">پیشنهادهای ویژه</a><a href="#productsSection">دسته‌بندی‌ها</a></div>
+      <div><b>خدمات مشتریان</b><a href="#support">پرسش‌های متداول</a><a href="#support">پیگیری سفارش</a><a href="#support">تماس با ما</a></div>
+      <div class="footer-contact" id="support"><b>با ما در ارتباط باش</b><p>شنبه تا پنج‌شنبه، ۹ تا ۱۸</p><p>📧 hello@abokala.example</p><small>اطلاعات تماس نمونه است؛ قبل از انتشار، آن را با اطلاعات واقعی جایگزین کن.</small></div>
+    </div>
+    <div class="footer-bottom"><span>© ۱۴۰۵ آنلاین ابو کالا — نسخهٔ آمادهٔ انتشار ایستا</span><button id="adminButton" class="admin-link" type="button">مدیریت محلی</button><span>ساخته‌شده با ♥ برای خرید بهتر</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="سبد خرید">
+    <div class="drawer-head"><h2>سبد خرید شما</h2><button class="close-button" data-close>×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary"><div><span>جمع کل</span><b id="cartTotal">۰ تومان</b></div><button class="primary-button" id="checkoutButton">ادامه و ثبت سفارش</button><small>این نسخه نمایشی است؛ پرداخت واقعی فعال نیست.</small></div>
+  </aside>
+  <aside class="drawer" id="favoritesDrawer" aria-label="علاقه‌مندی‌ها">
+    <div class="drawer-head"><h2>علاقه‌مندی‌های من</h2><button class="close-button" data-close>×</button></div>
+    <div id="favoriteItems" class="cart-items"></div>
+  </aside>
+  <section class="modal-backdrop" id="accountModal" hidden><div class="modal-card"><button class="close-button modal-close" data-modal-close>×</button><h2>حساب کاربری</h2><p class="muted">برای این نسخهٔ GitHub Pages، حساب در همین مرورگر ذخیره می‌شود؛ ورود امن سروری هنوز وصل نیست.</p><form id="accountForm"><label>نام کامل<input id="accountName" required minlength="2" placeholder="نام شما"></label><label>شماره تماس<input id="accountPhone" required inputmode="tel" minlength="7" placeholder="شماره تماس"></label><button class="primary-button" type="submit">ذخیره / ورود</button></form><button class="secondary-button" id="logoutButton" type="button">خروج از حساب</button></div></section>
+  <section class="modal-backdrop" id="checkoutModal" hidden><div class="modal-card"><button class="close-button modal-close" data-modal-close>×</button><h2>ثبت سفارش</h2><p class="muted">سفارش در این نسخه در مرورگر ثبت می‌شود و به فروشنده ارسال نمی‌گردد.</p><form id="checkoutForm"><label>نام گیرنده<input id="orderName" required></label><label>شماره تماس<input id="orderPhone" required inputmode="tel" minlength="7"></label><label>آدرس کامل<textarea id="orderAddress" required minlength="8" rows="3" placeholder="شهر، ناحیه، کوچه و نشانی"></textarea></label><label>روش تحویل<select id="deliveryMethod"><option>ارسال به آدرس</option><option>تحویل حضوری</option></select></label><label>روش پرداخت<select id="paymentMethod"><option value="پرداخت هنگام تحویل">پرداخت هنگام تحویل (بدون کارت بانکی)</option><option value="کارت‌به‌کارت">انتقال بانکی پس از تأیید فروشنده</option></select><small>در این نسخه پرداخت آنلاین فعال نیست؛ هیچ شماره کارت یا رمز بانکی وارد نکن.</small></label><label>یادداشت (اختیاری)<textarea id="orderNote" rows="2"></textarea></label><div class="modal-total" id="checkoutTotal"></div><button class="primary-button" type="submit">ثبت سفارش آزمایشی</button></form></div></section>
+  <section class="modal-backdrop" id="ordersModal" hidden><div class="modal-card wide-modal"><button class="close-button modal-close" data-modal-close>×</button><h2>سفارش‌های من</h2><div id="ordersList"></div></div></section>
+  <section class="modal-backdrop" id="adminModal" hidden><div class="modal-card wide-modal admin-panel"><button class="close-button modal-close" data-modal-close>×</button><span class="eyebrow">مدیریت فروشگاه</span><h2>مرکز مدیریت آنلاین ابو کالا</h2><p class="muted">این پنل فعلاً محلی است؛ تغییرات فقط در همین مرورگر ذخیره می‌شود.</p><div class="admin-shortcuts"><a href="#adminProductForm">＋ افزودن محصول</a><a href="#adminProductList">▦ فهرست محصولات افزوده‌شده</a><a href="#themeSelect" data-jump-theme>🎨 تنظیم ظاهر فروشگاه</a></div><div class="admin-section-title"><span>۱</span><div><b>اطلاعات محصول</b><small>مشخصات اصلی کالای جدید را وارد کن.</small></div></div><form id="adminProductForm" class="admin-form"><label>نام کالا<input id="newProductName" required placeholder="مثلاً گوشی هوشمند"></label><label>دسته‌بندی<select id="newProductCategory" required><option value="">انتخاب دسته‌بندی</option><option>موبایل</option><option>کامپیوتر</option><option>خانه</option><option>مد</option><option>زیبایی</option><option>ورزش</option><option>ابزار</option><option>کتاب</option><option>کودک</option><option>خودرو</option><option>خوراکی</option><option>حیوانات</option></select></label><label>قیمت (تومان)<input id="newProductPrice" type="number" min="1" required placeholder="قیمت فروش"></label><label>تعداد موجودی<input id="newProductStock" type="number" min="0" value="1" required></label><label>توضیحات محصول<textarea id="newProductDescription" rows="3" placeholder="ویژگی‌ها، اندازه، جنس و توضیحات واقعی کالا"></textarea></label><label>لینک عکس محصول (اختیاری)<input id="newProductImage" type="url" placeholder="https://example.com/product.jpg"></label><label class="admin-upload-label">یا عکس را از موبایل انتخاب کن<input id="newProductImageFile" type="file" accept="image/*"><small id="adminImageHint">انتخاب عکس از گالری گوشی یا کمپیوتر</small></label><button class="primary-button" type="submit">＋ ذخیره محصول در این مرورگر</button></form><div class="admin-section-title"><span>۲</span><div><b>محصولات ثبت‌شده</b><small>محصولات اضافه‌شده از این پنل را بررسی یا حذف کن.</small></div></div><div id="adminProductList"></div><div class="admin-section-title"><span>۳</span><div><b>سفارش‌های ثبت‌شده در این دستگاه</b><small>فقط سفارش‌های آزمایشی همین مرورگر؛ برای فروش واقعی به سرور نیاز است.</small></div></div><div id="adminOrdersList"></div><div class="admin-section-title"><span>۴</span><div><b>تنظیم ظاهر فروشگاه</b><small>رنگ‌ها و ظاهر صفحه اصلی را سریع تغییر بده.</small></div></div><div class="admin-theme-tools"><label>پوسته فروشگاه<select id="adminThemeSelect"><option value="violet">بنفش مدرن</option><option value="emerald">سبز فروشگاهی</option><option value="dark">تیره لوکس</option><option value="ocean">آبی اقیانوسی</option><option value="rose">صورتی مدرن</option><option value="amber">کهربایی گرم</option></select></label><button type="button" class="secondary-button" id="exportStoreData">دانلود پشتیبان اطلاعات محلی (JSON)</button></div><div class="admin-note">برای مدیریت امن از چند دستگاه، ذخیره دائمی و دریافت سفارش واقعی، مرحله بعد اتصال پایگاه داده و سرور است.</div></div></section>
+  <section class="modal-backdrop" id="productDetailModal" hidden><div class="modal-card wide-modal product-detail-modal"><button class="close-button modal-close" data-modal-close>×</button><div id="productDetailContent"></div></div></section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
